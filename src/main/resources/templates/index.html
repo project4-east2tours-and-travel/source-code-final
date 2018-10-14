@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+        Awesome Template
+        http://www.templatemo.com/preview/templatemo_450_awesome
+        -->
+		<title>East2WestTours and Travels</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="/home/css/animate.min.css">
+		<link rel="stylesheet" href="/home/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/home/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/home/css/templatemo-style.css">
+		<script src="/home/js/jquery.js"></script>
+		<script src="/home/js/bootstrap.min.js"></script>
+        <script src="/home/js/jquery.singlePageNav.min.js"></script>
+		<script src="/home/js/typed.js"></script>
+		<script src="/home/js/wow.min.js"></script>
+		<script src="/home/js/custom.js"></script>
+	</head>
+	<body id="top">
+
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>
+    	<!-- end preloader -->
+
+        <!-- start header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-phone"></i><span> Phone</span>+84 525 0 6767</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="mailto:East2West@gmail.com">East2West@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-4 col-xs-12">
+                        <ul class="social-icon">
+                            <li><span>Meet us on</span></li>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-12">
+
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-12">
+
+					</div>
+					<div class="col-md-5 col-sm-4 col-xs-12">
+						<ul class="social-icon">
+							<li><a href="/">HOME</a></li>
+							<li><a href="/tour/list-tour-customer">CART</a></li>
+							<li><a href="/tour/my-account">ACCOUNT</a></li>
+							<li><a href="http://localhost:9999/login">LOGIN/LOGOUT</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </header>
+        <!-- end header -->
+
+    	<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="/home" target="_blank" class="navbar-brand">East2WestTours and Travels</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#top">HOME</a></li>
+						<li><a href="#about">SEARCH</a></li>
+						<li><a href="#team">HOT TOUR</a></li>
+						<!--<li><a href="#service">SERVICE</a></li>-->
+						<li><a href="#portfolio">ATTACTIVE TOUR</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end navigation -->
+
+    	<!-- start home -->
+    	<section id="home">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-offset-2 col-md-8">
+    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">Welcome to <span>East2WestTours and Travels</span></h1>
+    					<div class="element">
+                            <div class="sub-element">Hello, We are East2WestTours and Travels</div>
+                            <div class="sub-element">We will bring you the best travel experience</div>
+                            <div class="sub-element">With the best quality and the most reasonable price.</div>
+                        </div>
+    					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">GET STARTED</a>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end home -->
+
+    	<!-- start about -->
+		<section id="about">
+			<div class="container">
+				<form th:action="@{/tour/search}" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">WE ARE <span>East2WestTours and Travels</span></h2>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+							<div class="media">
+								<div class="media-heading-wrapper">
+									<div class="media-object pull-left">
+										<i class="fa fa-paper-plane-o"></i>
+									</div>
+									<h3 class="media-heading">Departure</h3>
+								</div>
+								<div class="media-body">
+									<select class="form-control input-md" name="departure">
+										<option value="0">Departure</option>
+										<option value="Hai Phong">Hải Phòng</option>
+										<option value="Ho Chi Minh"> Hồ Chí Minh</option>
+										<option value="Ha Noi">Hà Nội</option>
+										<option value="Da Nang">Đà Nẵng</option>
+										<option value="Can Tho">Cần Thơ</option>
+										<option value="Binh Duong">Bình Dương</option>
+										<option value="Nha Trang">Nha Trang</option>
+										<option value="Hue">Huế</option>
+										<option value="Quy Nhon">Quy Nhơn</option>
+										<option value="Dong Nai">Đồng Nai</option>
+										<option value="Phu Quoc">Phú Quốc</option>
+										<option value="Long Xuyen">Long Xuyên</option>
+										<option value="Quang Ngai">Quảng Ngãi</option>
+										<option value="Vung Tau">Vũng Tàu</option>
+										<option value="Quang Ninh">Quảng Ninh</option>
+										<option value="Buon Ma Thuot">Buôn Ma Thuột</option>
+										<option value="Vinh">Vinh</option>
+										<option value="Ca Mau">Cà Mau</option>
+										<option value="Rach Gia">Rạch Giá</option>
+										<option value="Da Lat">Đà Lạt</option>
+										<option value="Thanh Hoa">Thanh Hóa</option>
+										<option value="Quang Binh">Quảng Bình</option>
+										<option value="Bac Lieu">Bạc Liêu</option>
+										<option value="Bao Loc">Bảo Lộc</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+							<div class="media">
+								<div class="media-heading-wrapper">
+									<div class="media-object pull-left">
+										<i class="fa fa-paper-plane"></i>
+									</div>
+									<h3 class="media-heading">Destination</h3>
+								</div>
+								<div class="media-body">
+									<select class="form-control" name="group">
+										<option value="0">Destination</option>
+										<option value="Ha Long">Ha Long</option>
+										<option value="Ha Noi">Hà Nội</option>
+										<option value="Ho Chi Minh"> Hồ Chí Minh</option>
+										<option value="Da Nang">Đà Nẵng</option>
+										<option value="Can Tho">Cần Thơ</option>
+										<option value="Hai Phong">Hải Phòng</option>
+										<option value="Binh Duong">Bình Dương</option>
+										<option value="Nha Trang">Nha Trang</option>
+										<option value="Hue">Huế</option>
+										<option value="Quy Nhon">Quy Nhơn</option>
+										<option value="Dong Nai">Đồng Nai</option>
+										<option value="Phu Quoc">Phú Quốc</option>
+										<option value="Long Xuyen">Long Xuyên</option>
+										<option value="Quang Ngai">Quảng Ngãi</option>
+										<option value="Vung Tau">Vũng Tàu</option>
+										<option value="Quang Ninh">Quảng Ninh</option>
+										<option value="Buon Ma Thuot">Buôn Ma Thuột</option>
+										<option value="Vinh">Vinh</option>
+										<option value="Ca Mau">Cà Mau</option>
+										<option value="Rach Gia">Rạch Giá</option>
+										<option value="Da Lat">Đà Lạt</option>
+										<option value="Thanh Hoa">Thanh Hóa</option>
+										<option value="Quang Binh">Quảng Bình</option>
+										<option value="Bac Lieu">Bạc Liêu</option>
+										<option value="Bao Loc">Bảo Lộc</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+							<div class="media">
+								<div class="media-heading-wrapper">
+									<div class="media-object pull-left">
+										<i class="fa fa-calendar"></i>
+									</div>
+									<h3 class="media-heading">Departure day</h3>
+								</div>
+								<div class="media-body">
+									<input type="date" class="form-control" name="departure_date" placeholder="" required>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.9s">
+							<div class="media">
+								<div class="media-heading-wrapper">
+									<div class="media-object pull-left">
+										<i class="fa fa-search"></i>
+									</div>
+									<h3 class="media-heading">Search</h3>
+								</div>
+								<div class="media-body">
+									<button type="submit" style="color: black; width: 150px;height: 36px"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- end about -->
+
+    	<!-- start team -->
+    	<section id="team">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>HOT</span> TOUR</h2>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					<div class="team-wrapper" >
+							<a href="/tour/detail/tour/1" style="color: #fff; text-decoration: none">
+								<img src="/home/images/dd1.jpg" class="img-responsive" alt="team img 1">
+								<div class="team-des">
+									<h4>Ha Long Bay</h4>
+									<span>Viet Nam</span>
+									<p>Ha Long Bay - Unesco recognized many times as a natural heritage of the world with thousands of islands made by creativity and life.</p>
+								</div>
+							</a>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<div class="team-wrapper">
+							<a href="/tour/detail/tour/1" style="color: #fff; text-decoration: none">
+								<img src="/home/images/dd2.jpg" class="img-responsive" alt="team img 2">
+								<div class="team-des">
+									<h4>Sa Pa</h4>
+									<span>Viet Nam</span>
+									<p>Sa Pa has a mild climate suitable for tourism activities with four seasons in a day for visitors to feel the delicate.</p>
+								</div>
+							</a>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					<div class="team-wrapper">
+							<a href="/tour/detail/tour/1" style="color: #fff; text-decoration: none">
+								<img src="/home/images/dd3.jpg" class="img-responsive" alt="team img 3">
+								<div class="team-des">
+									<h4>Da Lat</h4>
+									<span>Viet Nam</span>
+									<p>Tourism Dalat is always attracting many visitors not only by the climate but also the beautiful natural scenery with cool weather</p>
+								</div>
+							</a>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<div class="team-wrapper">
+							<a href="/tour/detail/tour/1" style="color: #fff; text-decoration: none">
+								<img src="/home/images/dd4.jpg" class="img-responsive" alt="team img 4">
+								<div class="team-des">
+									<h4>Krabi</h4>
+									<span>Thai Lan</span>
+									<p>Krabi with its rich natural attractions, including stretched white beaches, clear waters, vast coral reefs, numerous caves </p>
+								</div>
+							</a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end team -->
+
+    	<!-- start service -->
+    	<!--<section id="service">-->
+    		<!--<div class="container">-->
+    			<!--<div class="row">-->
+    				<!--<div class="col-md-12">-->
+    					<!--<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">OUR <span>AWESOME</span> THINGS</h2>-->
+    				<!--</div>-->
+    				<!--<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">-->
+    					<!--<i class="fa fa-laptop"></i>-->
+    					<!--<h4>Web Design</h4>-->
+    					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>-->
+    				<!--</div>-->
+    				<!--<div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">-->
+    					<!--<i class="fa fa-cloud"></i>-->
+    					<!--<h4>Cloud Computing</h4>-->
+    					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>-->
+    				<!--</div>-->
+    				<!--<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">-->
+    					<!--<i class="fa fa-cog"></i>-->
+    					<!--<h4>UX Design</h4>-->
+    					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>-->
+    				<!--</div>-->
+    			<!--</div>-->
+    		<!--</div>-->
+    	<!--</section>-->
+    	<!-- end servie -->
+
+    	<!-- start portfolio -->
+    	<section id="portfolio">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>ATTRACTIVE</span> TOUR</h2>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+    					   <img src="/home/images/hanoi1.jpg" class="img-responsive" alt="portfolio img 1">
+                                <div class="portfolio-overlay">
+                                    <h4>Ha Noi</h4>
+                                    <p>Hanoi is famous for many historical sites, beautiful landscapes, unique culinary background</p>
+                                    <a href="/tour/detail/tour/2" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="/home/images/sapa.jpg" class="img-responsive" alt="portfolio img 2">
+                                <div class="portfolio-overlay">
+                                    <h4>Sa Pa</h4>
+                                    <p>Sapa is famous for the dew covered all year round, fresh air, green terraces</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="/home/images/mocchau.jpg" class="img-responsive" alt="portfolio img 3">
+                                <div class="portfolio-overlay">
+                                    <h4>Moc Chau</h4>
+                                    <p>Moc Chau is cold in thick fog, magnificent landscape, green tea hills or pretty villages along the road.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="/home/images/catba.jpg" class="img-responsive" alt="portfolio img 4">
+                                <div class="portfolio-overlay">
+                                    <h4>Cat Ba</h4>
+                                    <p>Cat Ba is a place where the forest and sea meet, with many species of animals and plants</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="/home/images/ninhbinh.jpg" class="img-responsive" alt="portfolio img 3">
+                                <div class="portfolio-overlay">
+                                    <h4>Ninh Binh</h4>
+                                    <p>Ninh Binh with scenic spots like Tam Coc - Bich Dong, populations of Trang An</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="/home/images/tamdao.jpg" class="img-responsive" alt="portfolio img 4">
+                                <div class="portfolio-overlay">
+                                    <h4>Tam Dao</h4>
+                                    <p>Tam Dao is located at the height of 900m, there is cool air and quiet space, fresh</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="/home/images/dongvan.jpg" class="img-responsive" alt="portfolio img 1">
+                                <div class="portfolio-overlay">
+                                    <h4>Dong Van</h4>
+                                    <p>Dong Van stone plateau with majestic scenery, green terraces ngut thousands</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="/home/images/maichau.jpg" class="img-responsive" alt="portfolio img 2">
+                                <div class="portfolio-overlay">
+                                    <h4>Mai Chau</h4>
+                                    <p>Mai Chau with the beauty of the forest, cool climate, interesting culture and diverse cuisine.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end portfolio -->
+
+    	<!-- start contact -->
+    	<section id="contact">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>EAST2WEST TOUR AND TRAVELS</span></h2>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+    					<form action="/message-customer" method="POST" enctype="multipart/form-data">
+    						<label>NAME</label>
+    						<input name="fullname" type="text" class="form-control" id="fullname" required>
+
+                            <label>EMAIL</label>
+    						<input name="email" type="email" class="form-control" id="email" required>
+
+                            <label>MESSAGE</label>
+    						<textarea name="message" rows="4" class="form-control" id="message" required></textarea>
+
+                            <input type="submit" class="form-control">
+    					</form>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+    					<address>
+    						<p class="address-title">OUR ADDRESS</p>
+    						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</span>
+    						<p><i class="fa fa-phone"></i> +84 525 0 6767</p>
+    						<p><i class="fa fa-envelope-o"></i> East2West@gmail.com</p>
+    						<p><i class="fa fa-map-marker"></i> 8, Ton That Thuyet, My Dinh, Ha Noi, Viet Nam</p>
+    					</address>
+    					<ul class="social-icon">
+    						<li><h4>WE ARE SOCIAL</h4></li>
+    						<li><a href="#" class="fa fa-facebook"></a></li>
+    						<li><a href="#" class="fa fa-twitter"></a></li>
+    						<li><a href="https://www.youtube.com/channel/UC4yzoGuKkCL_8FzI-B-x83A" class="fa fa-youtube"></a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end contact -->
+
+        <!-- start copyright -->
+        <footer id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+							East2WestTours and Travels &copy; Copyright 2018. Designed By Team 7</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end copyright -->
+
+	</body>
+</html>

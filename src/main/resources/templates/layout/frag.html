@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--Heading-->
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--/*@thymesVar id="title" type=""*/-->
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script th:src="@{/js/bootstrap.js}"></script>
+</head>
+
+<!--Header-->
+<nav th:fragment="header" class="navbar navbar-light bg-light">
+    <div class="col-md-5">
+        <a class="navbar-brand" href="#"><i class="fab fa-playstation fa-4x"></i></a>
+        <span class="text-muted">East2WestTours and Travels</span>
+    </div>
+    <div class="col-md-5">
+
+    </div>
+    <div class="col-md-2 mt-3">
+        <img th:src="@{/img/avatar.png}" alt=""
+             class="img-thumbnail rounded-circle w-25 mr-2 float-left">
+        <div class="mt-3">
+            <strong>Admin</strong>
+            <a href="/login">(Logout)</a>
+        </div>
+    </div>
+</nav>
+
+<!--Menu-->
+<div th:fragment="menu" class="col-2">
+    <div class="nav flex-column nav-tabs">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="/admin/tour/create-tour">Tour</a>
+        <a class="nav-link" href="/admin/tour/create-tour-detail">Tour Detail</a>
+        <a class="nav-link" href="/admin/tour/list-customer">Customer</a>
+        <a class="nav-link" href="/admin/tour/list-order-detail">Order Detail</a>
+        <a class="nav-link" href="/admin/tour/list-order-tour">Order Tour</a>
+    </div>
+</div>
+
+<!--Footer-->
+<footer th:fragment="footer" class="container-fluid mt-3 mb-3">
+    <p class="text-center">East2WestTours and Travels &copy; Copyright 2018. Designed By Team 7</p>
+</footer>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <!--
+    Awesome Template
+    http://www.templatemo.com/preview/templatemo_450_awesome
+    -->
+    <title>East2WestTours and Travels</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/home/css/animate.min.css">
+    <link rel="stylesheet" href="/home/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/home/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/home/css/templatemo-style.css">
+    <script src="/home/js/jquery.js"></script>
+    <script src="/home/js/bootstrap.min.js"></script>
+    <script src="/home/js/jquery.singlePageNav.min.js"></script>
+    <script src="/home/js/typed.js"></script>
+    <script src="/home/js/wow.min.js"></script>
+    <script src="/home/js/custom.js"></script>
+</head>
+<body id="top">
+
+<!-- start preloader -->
+<div class="preloader">
+    <div class="sk-spinner sk-spinner-wave">
+        <div class="sk-rect1"></div>
+        <div class="sk-rect2"></div>
+        <div class="sk-rect3"></div>
+        <div class="sk-rect4"></div>
+        <div class="sk-rect5"></div>
+    </div>
+</div>
+<!-- end preloader -->
+
+<!-- start header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <p><i class="fa fa-phone"></i><span> Phone</span>+84 525 0 6767</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="mailto:East2West@gmail.com">East2West@gmail.com</a></p>
+            </div>
+            <div class="col-md-5 col-sm-4 col-xs-12">
+                <ul class="social-icon">
+                    <li><span>Meet us on</span></li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC4yzoGuKkCL_8FzI-B-x83A" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+
+            </div>
+            <div class="col-md-5 col-sm-4 col-xs-12">
+                <ul class="social-icon">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/tour/list-tour-customer">CART</a></li>
+                    <li><a href="/tour/my-account">ACCOUNT</a></li>
+                    <li><a href="http://localhost:9999/login">LOGIN/LOGOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- start navigation -->
+<nav class="navbar navbar-default templatemo-nav" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <a href="/home" class="navbar-brand">East2WestTours and Travels</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="#top">HOME</a></li>-->
+                <!--<li><a href="#about">TOUR</a></li>-->
+                <li><a href="#team">LIST TOUR</a></li>
+                <li><a href="#service">HISTORY</a></li>
+                <li><a href="#portfolio">TOUR EXPIRES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end navigation -->
+
+<!-- start home -->
+<!--<section id="home">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-6 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+<!--<img class="w-100 h-100" alt="" th:src="@{${product.image}}"/>-->
+<!--</div>-->
+<!--<div class="col-md-6 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+<!--<div class="col">-->
+<!--<div><h2><b th:text="${product.name}"></b></h2></div>-->
+<!--<div class="row">-->
+<!--<div><h4 th:utext="${product.description}"></h4></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- end home -->
+
+<!-- start about -->
+<!--<section id="about">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-6 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+<!--<img class="w-75 h-75" alt="" th:src="@{${product.image}}"/>-->
+<!--</div>-->
+<!--<div class="col-md-1 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+
+<!--</div>-->
+<!--<div class="col-md-5 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+<!--<div class="col">-->
+<!--<div><h2><b th:text="${product.name}"></b></h2></div>-->
+<!--<div class="row">-->
+<!--<div><h4 th:utext="${product.description}"></h4></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- end about -->
+
+<!-- start team -->
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>LIST</span> TOUR</h2>
+            </div>
+            <form th:each="orderdetail : ${pagination.getContent()}">
+                <table class="table table-hover" >
+                    <tr style="margin: 2%; background-color: Snow">
+                        <td style="width: 20%">
+                            <img style="width: 210px; height: 100px;margin-top: 9%;margin-left: 3%" alt="" th:src="@{${orderdetail.image}}" />
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div><a style="text-decoration: none" th:href="@{'/tour/detail/tour-detail/'+ ${orderdetail.idTourdetail}}"><h3 th:text="${orderdetail.name}"></h3></a></div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Quantity :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.quantity}"></h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Price :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.price}"></h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Date Order :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.order_Date}"></h5></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Start Day :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.startDay}"></h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Departure :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.departure}"></h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Date Expired :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.expired_Date}"></h5></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <nav aria-label=" navigation">
+                                <ul class="pager">
+                                    <li><a th:href="@{'/pay-tour/' + ${orderdetail.idOrderdetail}}">Pay</a> </li>
+                                    <li><a th:href="@{'/delete-tour/' + ${orderdetail.idOrderdetail}}">Delete</a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <!--<table class="table table-hover"  th:each="tourdetail : ${pagination2.getContent()}" >-->
+            <!--<tr style="margin: 2%; background-color: Snow">-->
+            <!--<td style="width: 20%">-->
+            <!--<img style="width: 300px; height: 150px" alt="" th:src="@{${tourdetail.image}}"/>-->
+            <!--</td>-->
+            <!--<td>-->
+            <!--<div class="col">-->
+            <!--<div><a style="text-decoration: none" th:href="@{'/tour/detail/tour-detail/'+ ${tourdetail.id_tourdetail}}"><h3 th:text="${tourdetail.name}"></h3></a></div>-->
+            <!--<div class="row">-->
+            <!--<div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+            <!--<div style="color: black">Start Day :</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+            <!--<div style="color: black"><h5 th:text="${tourdetail.startDay}"></h5></div>-->
+            <!--</div>-->
+            <!--<div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+            <!--<div style="color: black">End Day :</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+            <!--<div style="color: black"><h5 th:text="${tourdetail.endDay}"></h5></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+            <!--<div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+            <!--<div style="color: black">Price ($): </div>-->
+            <!--</div>-->
+            <!--<div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">-->
+            <!--<div style="color: black"><h5 th:text="${tourdetail.price}"></h5></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</td>-->
+            <!--</tr>-->
+            <!--</table>-->
+            <!--<nav aria-label=" navigation">-->
+            <!--<ul class="pager">-->
+            <!--<li> <a th:href="@{'/tour/detail/tour/' + ${product.id_tour}(page=1,limit=${limit2}) }">First</a> </li>-->
+            <!--<li th:if="${page2 &gt; 1}">-->
+            <!--<a th:href="@{'/tour/detail/tour/' + ${product.id_tour}(page = ${page2 - 1}, limit=${limit2})}" aria-label="Previous">-->
+            <!--<span aria-hidden="true">&laquo;</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li><a th:text="'Page' + ${page2}">1</a></li>-->
+            <!--<li th:if="${page2 &lt; pagination2.getTotalPages()}">-->
+            <!--<a th:href="@{'/tour/detail/tour/' + ${product.id_tour}(page=${page2 + 1}, limit=${limit2})}" aria-label="Next">-->
+            <!--<span aria-hidden="true">&raquo;</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li><a th:href="@{'/tour/detail/tour/' + ${product.id_tour}(page=${pagination2.getTotalPages()}, limit=${limit2})}" >Last</a></li>-->
+            <!--</ul>-->
+            <!--</nav>-->
+        </div>
+    </div>
+</section>
+<!-- end team -->
+
+<!-- start service -->
+<section id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>HISTORY</span> TOUR</h2>
+            </div>
+            <form th:each="orderdetail : ${pagination2.getContent()}" >
+                <div th:each="order_tour : ${order_tours}">
+                    <table class="table table-hover" >
+                        <tr style="margin: 2%; background-color: Snow">
+                            <td style="width: 20%">
+                                <img style="width: 210px; height: 105px;margin-top: 11%;margin-left: 3%" alt="" th:src="@{${orderdetail.image}}" />
+                            </td>
+                            <td>
+                                <div class="col">
+                                    <div><a style="text-decoration: none" th:href="@{'/tour/detail/tour-detail/'+ ${orderdetail.idTourdetail}}"><h3 th:text="${orderdetail.name}"></h3></a></div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5>Quantity :</h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5 th:text="${orderdetail.quantity}"></h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5>Price :</h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5 th:text="${orderdetail.price}"></h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5>Date Order :</h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5 th:text="${orderdetail.order_Date}"></h5></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5>Start Day :</h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5 th:text="${orderdetail.startDay}"></h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5>Departure :</h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5 th:text="${orderdetail.departure}"></h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5>Date Expired :</h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5 th:text="${orderdetail.expired_Date}"></h5></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5>Pay Day :</h5></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                            <div style="color: black"><h5 th:text="${order_tour.payDate}"></h5></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- end servie -->
+
+<!-- start portfolio -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>EXPIRES</span> TOUR</h2>
+            </div>
+            <form th:each="orderdetail : ${pagination3.getContent()}">
+                <table class="table table-hover" >
+                    <tr style="margin: 2%; background-color: Snow">
+                        <td style="width: 20%">
+                            <img style="width: 210px; height: 100px;margin-top: 9%;margin-left: 3%" alt="" th:src="@{${orderdetail.image}}" />
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div><a style="text-decoration: none" th:href="@{'/tour/detail/tour-detail/'+ ${orderdetail.idTourdetail}}"><h3 th:text="${orderdetail.name}"></h3></a></div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Quantity :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.quantity}"></h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Price :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.price}"></h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Date Order :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.order_Date}"></h5></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Start Day :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.startDay}"></h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Departure :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.departure}"></h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5>Date Expired :</h5></div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                                        <div style="color: black"><h5 th:text="${orderdetail.expired_Date}"></h5></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <nav aria-label=" navigation">
+                                <ul class="pager">
+                                    <li><a th:href="@{'/remove-tour/' + ${orderdetail.idOrderdetail}}">Delete</a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- end portfolio -->
+
+<!-- start contact -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>AWESOME</span></h2>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+                <form action="/message-customer" method="POST" enctype="multipart/form-data">
+                <label>NAME</label>
+                <input name="fullname" type="text" class="form-control" id="fullname" required>
+
+                <label>EMAIL</label>
+                <input name="email" type="email" class="form-control" id="email" required>
+
+                <label>MESSAGE</label>
+                <textarea name="message" rows="4" class="form-control" id="message" required></textarea>
+
+                <input type="submit" class="form-control">
+                </form>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+                <address>
+                    <p class="address-title">OUR ADDRESS</p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</span>
+                    <p><i class="fa fa-phone"></i> +84 525 0 6767</p>
+                    <p><i class="fa fa-envelope-o"></i> East2West@gmail.com</p>
+                    <p><i class="fa fa-map-marker"></i> 8, Ton That Thuyet, My Dinh, Ha Noi, Viet Nam</p>
+                </address>
+                <ul class="social-icon">
+                    <li><h4>WE ARE SOCIAL</h4></li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC4yzoGuKkCL_8FzI-B-x83A" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end contact -->
+
+<!-- start copyright -->
+<footer id="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+                    East2WestTours and Travels &copy; Copyright 2018. Designed By Team 7</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end copyright -->
+
+</body>
+</html>
